@@ -1,0 +1,198 @@
+*{box-sizing: border-box;}
+
+body{ margin: 0px;
+  padding: 0;
+
+}
+
+.ux{
+display: block;
+max-width: 100%;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 800px;
+height: 350px;
+}
+
+.portifolio{ margin-top: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+.minhasinfo{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: rgb(119, 158, 114)  ;}
+
+
+nav a{
+  display: flex;
+  align-items: center; justify-content: center;
+  text-decoration: none;
+  font-size: 2.5rem;
+  
+  margin-bottom: 20px;
+color: orange;}
+
+nav a:hover{
+
+color: darkmagenta;
+
+}
+
+.nome{ 
+  font-size: 1.5rem;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  color: darkslategrey;
+  text-align: left;}
+
+  
+@media(max-width:800px) { 
+.nome{display: flex;
+   justify-items: center;
+   align-items: center;
+   font-size: 1rem;  
+  }
+}
+
+
+.nome:hover{background: linear-gradient(rgb(119, 158, 114)  ) ;
+ border-radius: 6px 3px;
+font-style: italic;
+color: aliceblue;
+width: 400px;
+height: 120px;
+ text-align: center;}
+
+
+   
+.fotoperfil{ 
+  max-width: 100%;
+   display: block;
+   margin: auto;
+  height: auto;
+  width: 400px;
+   border-radius: 6px; 
+  }
+
+.grid{
+  display: grid; 
+  grid-template-columns: 1fr 1fr ; 
+  gap: 20px;}
+
+
+.experiencias{
+  margin:5px;
+  padding: 10px;
+  color:  rgb(119, 158, 114);
+   text-align: center; 
+    display:grid; 
+    text-decoration: underline;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.dados{ display: flex; 
+   background-color: rgb(119, 158, 114) ; color: aliceblue;
+   margin: auto;
+   gap:35px;
+   list-style: none;
+   font-size: 2.0rem; 
+   justify-content:center; 
+   border-radius: 15px 5px ; 
+  width: 450px;}
+
+  @media(max-width:400px) { 
+  .dados  { align-items: end;
+     border: white 1px solid; text-align: justify; 
+    width: 250px; 
+    margin: 50px; gap: 5px; }
+}
+
+.linkinicio{
+   justify-content: center;
+   align-items: center;
+}
+
+
+   .contato{ display: flex; 
+   margin: 40px;
+  gap:35px;
+   list-style: none;
+   font-size: 2.0rem; 
+   justify-content:center;
+  align-items: center;}
+
+  
+
+.lista{
+ font-size:2.5rem;
+margin: auto;
+list-style: none; 
+gap: 10px;
+ text-align: center; }
+
+
+
+
+.linkedin{
+   width: 30px;height: 50px; }
+
+@media(max-width:600px) { 
+ .lista { font-size: 1.3rem;
+flex-wrap: wrap;
+  }
+}
+
+@media(max-width:600px) { 
+.fotoperfil { 
+   display: block;
+   margin: auto;
+  height: auto;
+   border-radius: 6px; 
+  justify-items: center; 
+  }
+}
+
+@media(max-width:600px) { 
+header{ justify-items: center;font-size: 18px; display: block; 
+  }
+}
+
+@media(max-width:600px) { 
+ .experiencias {  font-size: 10px; text-align: center; 
+  }
+}
+
+textarea{margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+
+}
+
+.botao{
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-top: 10px;
+
+  
+}
+
+.rodape{margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 20px;}
