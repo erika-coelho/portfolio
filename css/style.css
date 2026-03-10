@@ -15,6 +15,14 @@ width: 800px;
 height: 350px;
 }
 
+@media (min-width: 375px) and (max-width:600px){
+ux {
+width: 150px;
+height: 50px;
+}
+
+}
+
 .portifolio{ margin-top: 200px;
 display: flex;
 justify-content: center;
@@ -31,15 +39,34 @@ flex-wrap: wrap;
   font-size: 2.5rem;
   color: rgb(119, 158, 114)  ;}
 
+  @media (min-width: 375px) and (max-width:600px){
+  .minhasinfo{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: rgb(119, 158, 114)  ;}
+  }
+
+  
+
 
 nav a{
   display: flex;
-  align-items: center; justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   font-size: 2.5rem;
   
   margin-bottom: 20px;
 color: orange;}
+
+@media (min-width: 375px) and (max-width:600px){
+  nav a {
+font-size: 1.8rem;
+  }
+}
 
 nav a:hover{
 
@@ -48,15 +75,16 @@ color: darkmagenta;
 }
 
 .nome{ 
+  display: flex;
   font-size: 1.5rem;
-  margin:auto;
+  margin: 10px auto;
   align-items: center;
   justify-content: center;
   color: darkslategrey;
-  text-align: left;}
+  }
 
   
-@media(max-width:800px) { 
+@media (min-width: 375px) and (max-width:800px) { 
 .nome{display: flex;
    justify-items: center;
    align-items: center;
@@ -64,17 +92,7 @@ color: darkmagenta;
   }
 }
 
-
-.nome:hover{background: linear-gradient(rgb(119, 158, 114)  ) ;
- border-radius: 6px 3px;
-font-style: italic;
-color: aliceblue;
-width: 400px;
-height: 120px;
- text-align: center;}
-
-
-   
+ 
 .fotoperfil{ 
   max-width: 100%;
    display: block;
@@ -83,38 +101,62 @@ height: 120px;
   width: 400px;
    border-radius: 6px; 
   }
+@media (min-width: 375px) and (max-width:600px){
+  .fotoperfil {
+      max-width: 100%;
+   display: block;
+   width: 900px;
+   height: 300px;
+  
+   border-radius: 6px; 
+
+  }
+}
+
 
 .grid{
   display: grid; 
   grid-template-columns: 1fr 1fr ; 
-  gap: 20px;}
+  }
 
-
-.experiencias{
-  margin:5px;
-  padding: 10px;
-  color:  rgb(119, 158, 114);
-   text-align: center; 
-    display:grid; 
-    text-decoration: underline;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
-.dados{ display: flex; 
-   background-color: rgb(119, 158, 114) ; color: aliceblue;
+.dados { display: flex; 
+   background-color: rgb(119, 158, 114) ;
+    color: aliceblue;
    margin: auto;
    gap:35px;
    list-style: none;
    font-size: 2.0rem; 
    justify-content:center; 
+   align-items: center;
    border-radius: 15px 5px ; 
-  width: 450px;}
+  width: 220px;}
 
-  @media(max-width:400px) { 
+  @media (min-width: 375px) and (max-width:600px) { 
   .dados  { align-items: end;
-     border: white 1px solid; text-align: justify; 
+     border: white 1px solid;
+    text-align: justify; 
     width: 250px; 
-    margin: 50px; gap: 5px; }
+    margin: 50px;
+     gap: 5px; }
 }
+
+.dados_contato li{
+display: flex; 
+   background-color: rgb(119, 158, 114) ;
+    color: aliceblue;
+   margin: auto;
+   gap:35px;
+   list-style: none;
+   font-size: 2.0rem; 
+   justify-content:center; 
+   align-items: center;
+   border-radius: 15px 5px ; 
+   width: 200px;
+  text-align: center;
+
+}
+
+
 
 .linkinicio{
    justify-content: center;
@@ -132,12 +174,28 @@ height: 120px;
 
   
 
+
+
 .lista{
- font-size:2.5rem;
+  margin-top:  40px;
+ font-size:2.3rem;
 margin: auto;
 list-style: none; 
-gap: 10px;
- text-align: center; }
+text-align: center; }
+
+@media (min-width: 375px) and (max-width:600px) { 
+.lista{ 
+
+  justify-content: left;
+  font-size: 18px;
+   text-align:center; 
+   height: 150px;
+   width: 250px;
+  
+   
+
+  }
+}
 
 
 
@@ -145,29 +203,30 @@ gap: 10px;
 .linkedin{
    width: 30px;height: 50px; }
 
-@media(max-width:600px) { 
- .lista { font-size: 1.3rem;
-flex-wrap: wrap;
-  }
-}
 
-@media(max-width:600px) { 
+@media (min-width: 375px) and (max-width:600px) { 
 .fotoperfil { 
-   display: block;
-   margin: auto;
-  height: auto;
+ 
+   margin: 10px auto;
+  height: 200px;
+  width: 100px;
    border-radius: 6px; 
   justify-items: center; 
   }
 }
 
-@media(max-width:600px) { 
+@media(min-width: 375px) and (max-width:600px) { 
 header{ justify-items: center;font-size: 18px; display: block; 
   }
 }
 
-@media(max-width:600px) { 
- .experiencias {  font-size: 10px; text-align: center; 
+@media (min-width: 375px) and (max-width:600px) { 
+.lista { 
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  font-size: 18px; text-align:justify; 
+  margin-left: 0;
   }
 }
 
